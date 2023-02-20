@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Paseos con Odi</title>
+        <link rel="icon" href="../favicon.ico" type="image/x-icon">
+        <link rel="stylesheet" href="../css/estilos.css">
+    </head>
+    <body>
+        <header class="header">
+            <img class= "logo" src="../icono.png" alt="logo">
+            <!-- El logo va a llevar siempre a la pagina de Inicio-->
+            <nav >
+                <ul >
+                    <li class="li"><a class="ancla" href="../index.html">Inicio</a> </li>
+                    <li class="li"><a class="ancla" href="../pages/nosotros.html">Nosotros</a> </li>
+                    <li class="li"><a class="ancla" href="../pages/Servicios.html">Servicios</a> </li>
+                    <li class="li"><a class="ancla" href="../pages/galeria.html">Galería</a> </li>
+                    <li class="li"><a class="ancla" href="#">Contacto</a> </li>
+                </ul>
+            </nav>
+        </header>
+    <main class="maincont">
+        <h1 class="title">Contacto</h1>
+
+        <!--No incorporo muchos más datos de contacto ya que quiero que el usuario deba interactuar con las redes sociales y propiciar un contacto más directo-->
+        
+        <div class="card contacto">
+            <p>Si necesitas más información sobre como trabajamos, recomendaciones de paseadores en tu zona, recomendaciones de educadores caninos o querés saber más de nuestros servicios podés llenar este formulario o comunicarte a través de cualquiera de nuestras redes sociales.</p>
+        </div>
+        <div class="card formulario">
+            <form action="">
+                <div>
+                    <label for="name">Nombre y Apellido: </label> 
+                    <input id="name" type="text" placeholder="Nombre y Apellido" required> 
+                </div>
+                <div>
+                    <label for="mail">Mail: </label>
+                    <input id="mail" name="mail" type="email" placeholder="ejemplo@mail.com" required>
+                </div>
+                <div>
+                    <label for="tel">Teléfono: </label>
+                    <input id="tel" name="tel" type="tel" placeholder="Teléfono" required>
+                </div>
+                <div>
+                    <label for="mascotas">¿Tiene perro/s?: </label>
+                    <input id="mascotas" name="mascotas" type="number" min=1 max=10 required> 
+                </div>
+                <div> 
+                    <label for="comentario">Dejá tu mensaje</label>
+                    <input id="comentario" name="comentario" type="text" placeholder="Escribi aquí tu mensaje." required>
+                </div>
+                <div>
+                    <input id="enviar" type="submit" value="Enviar">
+                </div>
+            </form>
+        </div>
+        <section class="secmapa">
+            <h2 class="title">Vení a visitarnos</h2>
+        <div class="mapa">
+            <iframe id="mapa" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3905.7215612706486!2d-58.40542281575979!3d-34.59639110777723!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcca8e352312eb%3A0x41ea1e5f4f2d7e87!2sPlaza%20Monse%C3%B1or%20Miguel%20de%20Andrea!5e0!3m2!1ses-419!2sar!4v1675029964623!5m2!1ses-419!2sar" width="800" height="600" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            
+        </div>
+    </section>
+    </main>
+    <footer class="footer">
+        <img class="logfoo" src="../icono.png" alt="logofooter">
+        <nav>
+            <!--Acá van iconos que redirijan a cada red social de manera funcional-->
+            <li class="lifoo"><a class="anclafoo" href="">Facebook</a> </li>
+            <li class="lifoo"><a class="anclafoo" href="">Instagram</a> </li> 
+            <li class="lifoo"><a class="anclafoo" href="">Telegram</a> </li>    
+        </nav>
+    </footer>
+
+</body>
+</html>

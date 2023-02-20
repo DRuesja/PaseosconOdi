@@ -1,0 +1,386 @@
+@font-face{ 
+    font-family: "Montserrat", sans-serif;  
+    src: url("../assets/fonts/Montserrat-VariableFont_wght.ttf"); 
+} 
+body { 
+    font-family: "Montserrat", sans-serif; 
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*conf. gral. del header*/
+
+.header{
+    background-color: rgba(250, 221, 142, 0.541);
+    width: 100%;
+    display: inline-block;
+    margin:0 auto;
+    text-align: center;
+    position: sticky;
+    top: 0%;
+    box-shadow: 0px 10px rgba(94, 83, 53, 0.534);
+}
+
+/* esto es la conf. de tamaño del logo*/
+
+.logo{
+    width: 8%;
+    height: 8%;
+    display: inline-block;
+    margin: 0 auto;
+}
+
+/*conf. positions del navegador*/
+
+.li{
+    list-style: none;
+    display: inline-block;
+    padding-inline: 6.1%;
+    margin-top: 0.2%;
+    margin-bottom: 0.6%;
+}
+
+/*conf. estilo de fuente nav*/
+
+.ancla{
+    text-decoration: none;
+    color: rgb(32, 29, 19);
+    font-size: 1.5rem;
+    font-weight: 300;
+    margin-bottom: 0.5%;
+    text-shadow: 1px 1px rgba(62, 55, 36);
+}
+
+/*conf del contenido central*/
+
+.main{
+    background-color: rgba(251, 242, 218, 1); 
+    width: 100%;
+    display: inline-block;
+    text-align: center;
+    padding-top: 5%;
+    padding-bottom: 3%;
+}
+
+/*formato de los titulos principales de cada página*/
+
+.title{
+    font-size: 3rem;
+    font-variant:small-caps ;
+    text-shadow: 0px 3px rgba(62, 55, 36, 0.616);
+    text-align: center;
+}
+
+/*use una configuracion minima ya que esto va a ser una ruleta de imagenes, solo me interesaba crear la clase por si es necesaria posteriormente en el proyecto*/
+
+.mainimg{
+    margin-bottom: 5%;
+    margin-top: 5%;
+}
+
+/* conf. de texto principal en el main*/
+
+.parrafo{
+    color:rgb(32, 29, 19);
+    width: 60%;
+    height: auto;
+    padding-bottom: 1rem;
+    margin: 0 auto;
+    text-align: justify;
+    text-indent: 2em;
+    font-style: italic;
+    font-weight: 400;
+    line-height: 1.6;
+}
+
+/*conf. de box footer*/
+
+.footer{
+    background-color: rgb(250, 221, 142);
+    width: 100%;
+    display: inline-block;
+    margin:0 auto;
+    text-align: center;
+}
+
+/*conf. de logo en el footer*/
+
+.logfoo{
+    width: 8vh;
+    height: 8%;
+    display: inline-block;
+    margin-block-end: 0vh;
+    margin-left: 0%;
+}
+
+/*conf. de nav de redes en footer*/
+
+.lifoo{
+    list-style: none;
+    display: inline-block;
+    padding-inline: 6.1%;
+    margin-top: 0.2%;
+    margin-bottom: 0.6%;
+}
+
+.anclafoo{
+    text-decoration: none;
+    color: rgb(32, 29, 19);
+    font-size: 1rem;
+    font-weight: 300;
+    margin-bottom: 0.5%;
+    text-shadow: 1px 1px rgba(62, 55, 36);
+}
+
+
+/*conf. tarjetas padre*/
+
+.card{
+    display: block;
+    margin: 0 auto;
+    width: 90%;
+}
+
+/*conf. formato tarjetas*/
+.cardconf{
+    color: rgb(32, 29, 19);
+    width: 40%;
+    height: 70%;
+    background-color: rgba(231, 184, 83, 0.603);
+    margin: 6%;
+    margin-inline: 4%;
+    padding: 2%;
+    border-radius: 2vh;
+    box-shadow: 13px 13px 19px 2px rgba(128,95,42,0.62);
+    -webkit-box-shadow: 13px 13px 19px 2px rgba(128,95,42,0.62);
+    -moz-box-shadow: 13px 13px 19px 2px rgba(128,95,42,0.62);
+    display: inline-block;
+    vertical-align: top;
+    text-align: center;
+}
+
+/*conf. tarjetas de la galeria*/
+
+.cardgal{
+    color: rgb(32, 29, 19);
+    width: 25%;
+    height: 70%;
+    background-color: rgba(231, 184, 83, 0.603);
+    margin: 6%;
+    margin-inline: 4%;
+    padding: 2%;
+    border-radius: 2vh;
+    box-shadow: 13px 13px 19px 2px rgba(128,95,42,0.62);
+    -webkit-box-shadow: 13px 13px 19px 2px rgba(128,95,42,0.62);
+    -moz-box-shadow: 13px 13px 19px 2px rgba(128,95,42,0.62);
+    display: inline-block;
+    vertical-align: top;
+    text-align: center;
+}
+
+/* Conf. título de tarjetas de Galería*/
+
+.fontcardgal{
+    margin-top: 1rem;
+    font-style: italic;
+    font-size: 1.5rem;
+    font-weight: 600;
+    text-shadow: 6px 1px 6px rgba(116,87,24,0.75);
+}
+
+/*conf. del padre de  la card de videos en pag Servicios*/
+
+.cardvid{
+    display: block;
+    width: 100%;
+}
+
+/*conf. de la card de videos en pag Servicios*/
+
+.videoconf{
+    color: rgb(32, 29, 19);
+    width: 45%;
+    height: 55vh;
+    background-color: rgba(231, 184, 83, 0.603);
+    margin: 0 auto;
+    margin-inline: 2%;
+    margin-top: 2%;
+    padding: 2%;
+    vertical-align: top;
+    border-radius: 2vh;
+    box-shadow: 13px 13px 19px 2px rgba(128,95,42,0.62);
+    -webkit-box-shadow: 13px 13px 19px 2px rgba(128,95,42,0.62);
+    -moz-box-shadow: 13px 13px 19px 2px rgba(128,95,42,0.62);
+    display: inline-block;
+    text-align: center;
+}
+
+/*Conf. del video*/
+
+.vid{
+width: 100%;
+height: 100%;
+}
+
+/*aquí va el formato gral. de la tabla de la pag Servicios*/
+
+.tabla{
+    width: 100%;
+    margin-top: 15%;
+    font-size: 1.5rem;
+    border-spacing: 10px;
+    border-color: aliceblue;
+}
+
+/*titulo de tabla*/
+
+.subtitle{
+    background-color: rgba(190, 146, 50, 0.699);
+    font-size: 2rem;
+    font-variant:small-caps ;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 1%;
+
+}
+
+/*conf. main de Contacto*/
+
+.maincont{
+    background-color: rgba(251, 242, 218, 1); 
+    width: 100%;
+    display: inline-block;
+    text-align: center;
+    padding-top: 5%;
+    padding-bottom: 3%;
+
+}
+
+/*conf. texto de Contacto*/
+
+.contacto{
+    display: inline-block;
+    color:rgb(32, 29, 19);
+    width: 35%;
+    height: 50vh;
+    margin-top: 2%;
+    padding: 8%;
+    text-align: justify;
+    text-indent: 2em;
+    font-style: italic;
+    font-weight: 400;
+    line-height: 1.6;
+    vertical-align: top;
+    
+
+}
+
+/*conf. de formulario de Contacto*/
+
+.formulario{
+    display: inline-block;
+    width: 45%;
+    height: 50vh;
+    margin-inline: 4%;
+    margin-top: 2%;
+    padding: 3%;
+    padding-top: 7%;
+    vertical-align: top;
+    line-height: 3;
+    text-align: left;
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+/*conf. espacios de formulario*/
+
+#name{
+    background-color: rgba(251, 242, 218, 1);
+    width: 50%;
+    height: 4vh;
+    margin-left: 3%;
+    border-bottom: 2px solid rgba(146,122,37,0.53);
+    border-top: 0px;
+    border-left: 0px;
+    border-right: 0px;
+    text-align: center;
+}
+
+#mail{
+    background-color: rgba(251, 242, 218, 1);
+    width: 50%;
+    height: 4vh;
+    margin-left: 19%;
+    border-bottom: 2px solid rgba(146,122,37,0.53);
+    border-top: 0px;
+    border-left: 0px;
+    border-right: 0px;
+    text-align: center;
+}
+
+#tel{
+    background-color: rgba(251, 242, 218, 1);
+    width: 50%;
+    height: 4vh;
+    margin-left: 14%;
+    border-bottom: 2px solid rgba(146,122,37,0.53);
+    border-top: 0px;
+    border-left: 0px;
+    border-right: 0px;
+    text-align: center;
+}
+
+#mascotas{
+    background-color: rgba(251, 242, 218, 1);
+    width: 50%;
+    height: 4vh;
+    margin-left: 7%;
+    border-bottom: 2px solid rgba(146,122,37,0.53);
+    border-top: 0px;
+    border-left: 0px;
+    border-right: 0px;
+    text-align: center;
+}
+
+#comentario{
+    background-color: rgba(251, 242, 218, 1);
+    width: 50%;
+    height: 15vh;
+    margin-top: 5%;
+    margin-left: 7%;
+    border: 2px solid rgba(146,122,37,0.71);
+    border-radius: 7px 7px 7px 7px;
+    background: rgba(146,122,37,0.18);
+    text-align: center;
+}
+
+#enviar{
+    color:rgb(32, 29, 19);
+    margin-top: 7%;
+    margin-left: 66%;
+    padding: 1%;
+    border: 2px solid rgba(146,122,37,0.71);
+    border-radius: 7px 7px 7px 7px;
+    box-shadow: 4px 3px 5px 0px rgba(63, 36, 13, 0.473);
+    background: rgba(146,122,37,0.18);
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+/*conf. sección "Veni a visitarnos" en Contacto*/
+
+.secmapa{
+    display:block;
+    margin-top: 8%;
+}
+
+#mapa{
+    margin: 0 auto;
+    margin-top: 3%;
+    display: block;
+    box-shadow: 1px 0px 9px 11px rgba(128,74,26,0.43);
+}
