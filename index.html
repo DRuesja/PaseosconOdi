@@ -1,42 +1,93 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Paseos con Odi</title>
     <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
     <link rel="stylesheet" href="./css/estilos.css">
 </head>
 <body>
-    <header class="header">
-        <img class= "logo" src="./icono.png" alt="logo">
-        <!-- El logo va a llevar siempre a la pagina de Inicio-->
-        <nav >
-            <ul >
-                <li class="li"><a class="ancla" href="#">Inicio</a> </li>
-                <li class="li"><a class="ancla" href="./pages/nosotros.html">Nosotros</a> </li>
-                <li class="li"><a class="ancla" href="./pages/Servicios.html">Servicios</a> </li>
-                <li class="li"><a class="ancla" href="./pages/galeria.html">Galería</a> </li>
-                <li class="li"><a class="ancla" href="./pages/contacto.html">Contacto</a> </li>
-            </ul>
-        </nav>
-    </header>
-    <main class="main">
-        <h1 class="title">Paseos con Odi</h1>
-        <!--aca va una ruleta de imagenes-->
-        <img class="mainimg" src="./assets/img/Carrousel1.jpg" alt="">
-        <p class="parrafo">Creemos que la educación canina no es unidireccional, es un flujo continuo de crecimiento para tutores y perros. Ningún proceso sano puede iniciar desde el paradigma de la superioridad. El entendimiento de que somos diferentes nos abre un mundo comunicacional nuevo desde el respeto y el amor. Los procesos educativos en humanos y animales no son lineales, son curvas de crecimiento y decrecimiento constante.<br>En Paseos con Odi, caminar en manada es la herramienta fundamental para que nuestros perris y familias interespecie crezcan y se desarrollen.</p>
+    <div class="sticky-top">
+        <header class="headercolor">
+            <nav class="navbar navbar-expand-lg navbar-light">
+                <div class="container-fluid">
+                  <a class="navbar-brand h-logo-widht" href="./index.html"><img class= "logo" src="./icono.png" alt="logo"></a>
+                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+                  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0 ulflex">
+                      <li class="nav-item linkhover">
+                        <a class="nav-link active" aria-current="page" href="#">INICIO</a>
+                      </li>
+                      <li class="nav-item linkhover">
+                        <a class="nav-link active" aria-current="page" href="./pages/nosotros.html">NOSOTROS</a>
+                      </li>
+                      <li class="nav-item linkhover">
+                        <a class="nav-link active" aria-current="page" href="./pages/Servicios.html">SERVICIOS</a>
+                      </li>
+                      <li class="nav-item linkhover">
+                        <a class="nav-link active" aria-current="page" href="./pages/galeria.html">GALERIA</a>
+                      </li>
+                      <li class="nav-item linkhover">
+                        <a class="nav-link active" aria-current="page" href="./pages/contacto.html">CONTACTO</a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </nav>
+        </header>
+    </div>
+    <main class="main container-fluid">
+        <h1 class="text-center m-5 titulos">PASEOS CON ODI</h1>
+        <!--acá usé una ruleta de bootstrap-->
+        <div id="carouselExampleControls" class="carousel slide container" data-bs-ride="carousel">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="./assets/img/Carrousel1.jpg" class="d-block w-100 imgcarousel" alt="OdiyJules">
+              </div>
+              <div class="carousel-item">
+                <img src="./assets/img/caroousel2.jpg" class="d-block w-100 imgcarousel" alt="Danyenpelotero">
+              </div>
+              <div class="carousel-item">
+                <img src="./assets/img/carrousel3.jpg" class="d-block w-100 imgcarousel" alt="manadaenlacalle">
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+        <div class="m-5">
+            <p class="text-center fst-italic parrafo">Creemos que la educación canina no es unidireccional, es un flujo continuo de crecimiento para tutores y perros. Ningún proceso sano puede iniciar desde el paradigma de la superioridad. El entendimiento de que somos diferentes nos abre un mundo comunicacional nuevo desde el respeto y el amor. Los procesos educativos en humanos y animales no son lineales, son curvas de crecimiento y decrecimiento constante.<br>En Paseos con Odi, caminar en manada es la herramienta fundamental para que nuestros perris y familias interespecie crezcan y se desarrollen.</p>
+        </div>
     </main>
-    <footer class="footer">
-        <img class="logfoo" src="./icono.png" alt="logofooter">
-        <nav>
-            <!--Acá van iconos que redirijan a cada red social de manera funcional-->
-            <li class="lifoo"><a class="anclafoo" href="">Facebook</a> </li>
-            <li class="lifoo"><a class="anclafoo" href="">Instagram</a> </li> 
-            <li class="lifoo"><a class="anclafoo" href="">Telegram</a> </li>    
-        </nav>
+    <footer>
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-1">
+            <a href="./index.html"><img class= "logo" src="./icono.png" alt="logo"></a>
+          </div>
+          <div class="col-11">
+            <ul class="nav justify-content-end">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#"><img src="./assets/iconos/instagram_icono.ico" alt="Instagram"></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#"><img class="redlogo" src="./assets/iconos/facebook_icono.ico" alt="Instagram"></a>
+            </ul>
+          </div> 
+        </div>
+      </div> 
     </footer>
-
+    
+<script src="./js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
