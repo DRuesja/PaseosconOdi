@@ -77,24 +77,18 @@ body {
     line-height: 1.6;
 }
 
-.navfoo{
-    width: fit-content;
-
-}
-
 /*Config. iconos footer*/
 
 .logofoo{
-    align-items: center;
-    display: flex;
+    width: 15%;
 }
 
-.redlogo{
-    width: 50%;;
+.logoface{
+    width: 25%;
 }
 /*color de elementos*/
 
-.headercolor{
+.hfcolor{
     background-color: rgba(250, 221, 142, 0.541);
 }
 
