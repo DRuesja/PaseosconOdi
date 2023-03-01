@@ -7,6 +7,8 @@
     <title>Paseos con Odi</title>
     <link rel="icon" href="favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/fontawesome.css">
+    <link rel="stylesheet" href="./css/all.min.css">
     <link rel="stylesheet" href="./css/estilos.css">
 </head>
 <body>
@@ -41,10 +43,11 @@
               </nav>
         </header>
     </div>
-    <main class="main container-fluid">
-        <h1 class="text-center m-5 titulos">PASEOS CON ODI</h1>
+    <main class="container-fluid">
+      <div class="row main">
+        <h1 class="text-center mt-5 mb-5 titulos">PASEOS CON ODI</h1>
         <!--acá usé una ruleta de bootstrap-->
-        <div id="carouselExampleControls" class="carousel slide container" data-bs-ride="carousel">
+        <div id="carouselExampleControls" class="carousel slide container carouselw" data-bs-ride="carousel">
             <div class="carousel-inner">
               <div class="carousel-item active">
                 <img src="./assets/img/Carrousel1.jpg" class="d-block w-100 imgcarousel" alt="OdiyJules">
@@ -65,28 +68,41 @@
               <span class="visually-hidden">Next</span>
             </button>
           </div>
-        <div class="m-5">
+        <div class="row mt-5 mb-5">
             <p class="text-center fst-italic parrafo">Creemos que la educación canina no es unidireccional, es un flujo continuo de crecimiento para tutores y perros. Ningún proceso sano puede iniciar desde el paradigma de la superioridad. El entendimiento de que somos diferentes nos abre un mundo comunicacional nuevo desde el respeto y el amor. Los procesos educativos en humanos y animales no son lineales, son curvas de crecimiento y decrecimiento constante.<br>En Paseos con Odi, caminar en manada es la herramienta fundamental para que nuestros perris y familias interespecie crezcan y se desarrollen.</p>
         </div>
+      </div>  
     </main>
-    <footer class="hfcolor">
-      <nav class="navbar navbar-expand-lg navbar-light">
-        <div class="container-fluid">
-          <a class="navbar-brand" href="./index.html"><img class="logofoo" src="./icono.png" alt="Logo"></a>
-          <div class="navbarNav">
-            <ul class="navbar-nav justify-content-end">
-              <li class="nav-item">
-                <a class="nav-link" href="https://www.instagram.com/paseosconodi/" target="_blank"><img src="./assets/iconos/instagram.png" alt="Instagram"></a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="https://ne-np.facebook.com/profile.php?id=100070062176391" target="_blank"><img class="logoface"src="./assets/iconos/facebook.png" alt="Facebook"></a>
-              </li>
-            </ul>
-          </div>
+    <div class="container-fluid hfcolor ">
+      <footer class="row justify-content-around" >
+        <div class="col-auto row-col-sm-auto m-2 p-0">
+          <a href="./index.html"><img class="logofoo" src="./icono.png" alt="logo"></a>
         </div>
-      </nav>
-    </footer>
-    
+        <div class="col-auto  row-col-sm-auto m-2 p-0 order-first">
+          <a href="https://www.instagram.com/paseosconodi/" target="_blank"></a>
+            <script src="https://cdn.lordicon.com/ritcuqlt.js"></script>
+            <lord-icon
+                src="https://cdn.lordicon.com/lxotnbfa.json"
+                trigger="hover"
+                colors="primary:#e8e230,secondary:#794628"
+                style="width:100px;height:100px;">
+            </lord-icon>
+          </a>
+        </div>
+        <div class="col-auto row-col-sm-auto m-2 p-0">
+          <a href="https://ne-np.facebook.com/profile.php?id=100070062176391" target="_blank"></a>
+            <script src="https://cdn.lordicon.com/ritcuqlt.js"></script>
+            <lord-icon
+                src="https://cdn.lordicon.com/ganitnqp.json"
+                trigger="hover"
+                colors="primary:#e8e230,secondary:#794628"
+                style="width:100px;height:100px">
+            </lord-icon>
+          </a>
+        </div>
+        </div>
+      </footer>
+    </div>  
 <script src="./js/bootstrap.bundle.min.js"></script>
 </body>
 </html>

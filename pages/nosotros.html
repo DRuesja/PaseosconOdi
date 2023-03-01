@@ -1,50 +1,97 @@
 <!DOCTYPE html>
-<html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Paseos con Odi</title>
-        <link rel="icon" href="../favicon.ico" type="image/x-icon">
-        <link rel="stylesheet" href="../css/estilos.css">
-    </head>
-    <body>
-        <header class="header">
-            <img class= "logo" src="../icono.png" alt="logo">
-            <!-- El logo va a llevar siempre a la pagina de Inicio-->
-            <nav >
-                <ul >
-                    <li class="li"><a class="ancla" href="../index.html">Inicio</a> </li>
-                    <li class="li"><a class="ancla" href="#">Nosotros</a> </li>
-                    <li class="li"><a class="ancla" href="../pages/Servicios.html">Servicios</a> </li>
-                    <li class="li"><a class="ancla" href="../pages/galeria.html">Galería</a> </li>
-                    <li class="li"><a class="ancla" href="../pages/contacto.html">Contacto</a> </li>
-                </ul>
-            </nav>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Paseos con Odi</title>
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/fontawesome.css">
+    <link rel="stylesheet" href="../css/all.min.css">
+    <link rel="stylesheet" href="../css/estilos.css">
+</head>
+<body>
+    <div class="sticky-top">
+        <header class="hfcolor">
+            <nav class="navbar navbar-expand-lg navbar-light">
+                <div class="container-fluid">
+                  <a class="navbar-brand h-logo-widht" href="../index.html"><img class= "logo" src="../icono.png" alt="logo"></a>
+                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+                  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0 ulflex">
+                      <li class="nav-item linkhover">
+                        <a class="nav-link active" aria-current="page" href="../index.html">INICIO</a>
+                      </li>
+                      <li class="nav-item linkhover">
+                        <a class="nav-link active" aria-current="page" href="#">NOSOTROS</a>
+                      </li>
+                      <li class="nav-item linkhover">
+                        <a class="nav-link active" aria-current="page" href="../pages/Servicios.html">SERVICIOS</a>
+                      </li>
+                      <li class="nav-item linkhover">
+                        <a class="nav-link active" aria-current="page" href="../pages/galeria.html">GALERIA</a>
+                      </li>
+                      <li class="nav-item linkhover">
+                        <a class="nav-link active" aria-current="page" href="../pages/contacto.html">CONTACTO</a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </nav>
         </header>
-    <main class="main">
-        <h1 class="title">Nosotros</h1>
-        <div class="card">
-
-            <!--Texto de prueba-->
-            <div class="cardconf">
-                <img src="../assets/img/nosotros1.jpg" alt="Odi">
-                <p>Odi es paseador desde hace 15 años.<br>Sus manadas son construidas basadas en el carácter y necesidades de cada perri, no en su tamaño, ya que considera más importante las necesidades de desgaste energético y de actividades recreativas de cada uno. No usa las técnicas de dominancia de la vieja escuela, sino refuerzos positivos como el afecto y los premios de comida. Siempre lo vas a encontrar sonriendo y hablando con los perris.</p>
-            </div>
-            <div class="cardconf">
-                <img src="../assets/img/nosotros2.jpg" alt="Dani">
-                <p>Dani es paseadora hace 10 años.<br>Se especializa en educación canina en positivo, técnicas comunicacionales y estudia musicología aplicada a animales mientras termina su Lic. en Artes Musicales en la Universidad Nacional de las Artes.<br>Su manada es de perros pequeños con problemas de conducta que acompaña entrenando en casa y con paseos de descompresión. Siempre la vas a encontrar rodeada de Salchis.</p>
-            </div>
+    </div>
+    <main class="container-fluid main">
+        <div class="row main">
+            <h1 class="text-center mt-5 mb-5 titulos">Nosotros</h1>
+            <div class="card-group">
+                <div class="card w-40 ">
+                  <img src="../assets/img/nosotros1.jpg" class="card-img-top imgcarousel" alt="ODILO">
+                  <div class="card-body">
+                    <p class="card-text">Odi es paseador desde hace 15 años.<br>Sus manadas son construidas basadas en el carácter y necesidades de cada perri, no en su tamaño, ya que considera más importante las necesidades de desgaste energético y de actividades recreativas de cada uno. No usa las técnicas de dominancia de la vieja escuela, sino refuerzos positivos como el afecto y los premios de comida. Siempre lo vas a encontrar sonriendo y hablando con los perris.</p>
+                  </div>
+                </div>
+                <div class="card w-40">
+                  <img src="../assets/img/nosotros2.jpg" class="card-img-top imgcarousel" alt="DANIELA">
+                  <div class="card-body">
+                    <p class="card-text">Dani es paseadora hace 10 años.<br>Se especializa en educación canina en positivo, técnicas comunicacionales y estudia musicología aplicada a animales mientras termina su Lic. en Artes Musicales en la Universidad Nacional de las Artes.<br>Su manada es de perros pequeños con problemas de conducta que acompaña entrenando en casa y con paseos de descompresión. Siempre la vas a encontrar rodeada de Salchis.</p>
+                  </div>
+                </div>
+              </div>
+        </div>     
     </main>
-    <footer class="footer">
-        <img class="logfoo" src="../icono.png" alt="logofooter">
-        <nav>
-            <!--Acá van iconos que redirijan a cada red social de manera funcional-->
-            <li class="lifoo"><a class="anclafoo" href="">Facebook</a> </li>
-            <li class="lifoo"><a class="anclafoo" href="">Instagram</a> </li> 
-            <li class="lifoo"><a class="anclafoo" href="">Telegram</a> </li>    
-        </nav>
-    </footer>
-
+    <div class="container-fluid hfcolor ">
+        <footer class="row justify-content-around" >
+          <div class="col-auto row-col-sm-auto m-2 p-0">
+            <a href="../index.html"><img class="logofoo" src="../icono.png" alt="logo"></a>
+          </div>
+          <div class="col-auto  row-col-sm-auto m-2 p-0 order-first">
+            <a href="https://www.instagram.com/paseosconodi/" target="_blank"></a>
+              <script src="https://cdn.lordicon.com/ritcuqlt.js"></script>
+              <lord-icon
+                  src="https://cdn.lordicon.com/lxotnbfa.json"
+                  trigger="hover"
+                  colors="primary:#e8e230,secondary:#794628"
+                  style="width:100px;height:100px;">
+              </lord-icon>
+            </a>
+          </div>
+          <div class="col-auto row-col-sm-auto m-2 p-0">
+            <a href="https://ne-np.facebook.com/profile.php?id=100070062176391" target="_blank"></a>
+              <script src="https://cdn.lordicon.com/ritcuqlt.js"></script>
+              <lord-icon
+                  src="https://cdn.lordicon.com/ganitnqp.json"
+                  trigger="hover"
+                  colors="primary:#e8e230,secondary:#794628"
+                  style="width:100px;height:100px">
+              </lord-icon>
+            </a>
+          </div>
+          </div>
+        </footer>
+      </div>  
+  <script src="../js/bootstrap.bundle.min.js"></script>
 </body>
 </html>

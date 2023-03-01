@@ -1,27 +1,48 @@
 <!DOCTYPE html>
-<html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Paseos con Odi</title>
-        <link rel="icon" href="../favicon.ico" type="image/x-icon">
-        <link rel="stylesheet" href="../css/estilos.css">
-    </head>
-    <body>
-        <header class="header">
-            <img class= "logo" src="../icono.png" alt="logo">
-            <!-- El logo va a llevar siempre a la pagina de Inicio-->
-            <nav >
-                <ul >
-                    <li class="li"><a class="ancla" href="../index.html">Inicio</a> </li>
-                    <li class="li"><a class="ancla" href="../pages/nosotros.html">Nosotros</a> </li>
-                    <li class="li"><a class="ancla" href="../pages/sushistorias.html">Sus historias</a> </li>
-                    <li class="li"><a class="ancla" href="#">Galería</a> </li>
-                    <li class="li"><a class="ancla" href="../pages/contacto.html">Contacto</a> </li>
-                </ul>
-            </nav>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Paseos con Odi</title>
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/fontawesome.css">
+    <link rel="stylesheet" href="../css/all.min.css">
+    <link rel="stylesheet" href="../css/estilos.css">
+</head>
+<body>
+    <div class="sticky-top">
+        <header class="hfcolor">
+            <nav class="navbar navbar-expand-lg navbar-light">
+                <div class="container-fluid">
+                  <a class="navbar-brand h-logo-widht" href="../index.html"><img class= "logo" src="../icono.png" alt="logo"></a>
+                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+                  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0 ulflex">
+                      <li class="nav-item linkhover">
+                        <a class="nav-link active" aria-current="page" href="../index.html">INICIO</a>
+                      </li>
+                      <li class="nav-item linkhover">
+                        <a class="nav-link active" aria-current="page" href="./nosotros.html">NOSOTROS</a>
+                      </li>
+                      <li class="nav-item linkhover">
+                        <a class="nav-link active" aria-current="page" href="./Servicios.html">SERVICIOS</a>
+                      </li>
+                      <li class="nav-item linkhover">
+                        <a class="nav-link active" aria-current="page" href="#">GALERIA</a>
+                      </li>
+                      <li class="nav-item linkhover">
+                        <a class="nav-link active" aria-current="page" href="./contacto.html">CONTACTO</a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </nav>
         </header>
+    </div>
     <main class="main">
         <h1 class="title">Galería</h1>
 
@@ -54,15 +75,36 @@
             </div>
     </section>
     </main>
-    <footer class="footer">
-        <img class="logfoo" src="../icono.png" alt="logofooter">
-        <nav>
-            <!--Acá van iconos que redirijan a cada red social de manera funcional-->
-            <li class="lifoo"><a class="anclafoo" href="">Facebook</a> </li>
-            <li class="lifoo"><a class="anclafoo" href="">Instagram</a> </li> 
-            <li class="lifoo"><a class="anclafoo" href="">Telegram</a> </li>    
-        </nav>
-    </footer>
-
+    <div class="container-fluid hfcolor ">
+        <footer class="row justify-content-around" >
+          <div class="col-auto row-col-sm-auto m-2 p-0">
+            <a href="../index.html"><img class="logofoo" src="../icono.png" alt="logo"></a>
+          </div>
+          <div class="col-auto  row-col-sm-auto m-2 p-0 order-first">
+            <a href="https://www.instagram.com/paseosconodi/" target="_blank"></a>
+              <script src="https://cdn.lordicon.com/ritcuqlt.js"></script>
+              <lord-icon
+                  src="https://cdn.lordicon.com/lxotnbfa.json"
+                  trigger="hover"
+                  colors="primary:#e8e230,secondary:#794628"
+                  style="width:100px;height:100px;">
+              </lord-icon>
+            </a>
+          </div>
+          <div class="col-auto row-col-sm-auto m-2 p-0">
+            <a href="https://ne-np.facebook.com/profile.php?id=100070062176391" target="_blank"></a>
+              <script src="https://cdn.lordicon.com/ritcuqlt.js"></script>
+              <lord-icon
+                  src="https://cdn.lordicon.com/ganitnqp.json"
+                  trigger="hover"
+                  colors="primary:#e8e230,secondary:#794628"
+                  style="width:100px;height:100px">
+              </lord-icon>
+            </a>
+          </div>
+          </div>
+        </footer>
+      </div>  
+  <script src="../js/bootstrap.bundle.min.js"></script>
 </body>
 </html>

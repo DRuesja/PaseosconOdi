@@ -6,7 +6,7 @@ body {
     font-family: "Montserrat", sans-serif; 
 }
 
-/*Personalizacion logo*/
+/*Personalizacion logo, necesaria para que se adapte siempre al contenedor sin necesidad de poner ancho fijo*/
 
 .logo{
     width: 100%;
@@ -63,13 +63,24 @@ body {
   right: 0;
 }
 
+/*Config. personalizada del main*/
+
+.main{
+    background-color: rgba(251, 242, 218, 1);
+    height: 100%;
+}
+
 /*Config. personalizadas para el carousel de Inicio*/
+
+.carouselw{
+    width: 80%;
+}
 
 .imgcarousel{
     object-fit: cover;
 }
 
-/*Config. personalizadas para el parrafo*/
+/*Config. personalizadas para parrafos*/
 
 .parrafo{
     font-size: 1rem;
@@ -77,14 +88,28 @@ body {
     line-height: 1.6;
 }
 
-/*Config. iconos footer*/
+/*Config. cards de Nosotros*/
 
-.logofoo{
-    width: 15%;
+.w-40{
+    width: 40%;
 }
 
-.logoface{
-    width: 25%;
+/*Config. buttons*/
+
+.boton{
+    background-color: rgba(146, 95, 52, 0.705);
+}
+
+/*Config. ancho de logos en el footer*/
+
+.logofoo{
+    width: 100px;
+    height: 100px;
+}
+
+.textfooter{
+    width: fit-content;
+    margin: 0 auto;
 }
 /*color de elementos*/
 
