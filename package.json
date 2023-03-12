@@ -1,0 +1,17 @@
+{
+  "name": "preentrega3_danielaruesja",
+  "version": "1.0.0",
+  "description": "preentrega 3 para del curso de desarrollo web de coder house",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build-css": "node-sass --include-path scss scss/estilos.scss css/estilos.css",
+    "watch-css": "nodemon -e scss -x \"npm run build-css\""
+  },
+  "author": "daniela ruesja",
+  "license": "ISC",
+  "devDependencies": {
+    "node-sass": "^8.0.0",
+    "nodemon": "^2.0.21"
+  }
+}

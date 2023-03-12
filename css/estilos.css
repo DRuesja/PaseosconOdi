@@ -1,48 +1,40 @@
-@font-face{ 
-    font-family: "Montserrat", sans-serif;  
-    src: url("../assets/fonts/Montserrat-VariableFont_wght.ttf"); 
-} 
-body { 
-    font-family: "Montserrat", sans-serif; 
-}
+@charset "UTF-8";
+@font-face {
+  font-family: "Montserrat", sans-serif;
+  src: url("../assets/fonts/Montserrat-VariableFont_wght.ttf"); }
+
+body {
+  font-family: "Montserrat", sans-serif; }
 
 /*Personalizacion logo, necesaria para que se adapte siempre al contenedor sin necesidad de poner ancho fijo*/
-
-.logo{
-    width: 100%;
-}
+.logo {
+  width: 100%; }
 
 /*Tamaño del contenedor del logo en el Header*/
-
-.h-logo-widht{
-    width: 10%;
-}
+.h-logo-widht {
+  width: 6%; }
 
 /*Personalizacion del navegador*/
-
-.ulflex{
-    width: 100%;
-    font-size: 1.2rem;
-    font-weight: 500;
-    text-shadow: 1px 4px 9px rgba(98,66,13,0.6);
-    justify-content: space-evenly;
-}
+.ulflex {
+  width: 100%;
+  font-size: 1.2rem;
+  font-weight: 500;
+  text-shadow: 1px 4px 9px rgba(98, 66, 13, 0.6);
+  justify-content: space-evenly; }
 
 /*Conf. del hover en Nav sacadas de IanHubb y personalizada*/
-
-.linkhover{
-    display: inline-block;
+.linkhover {
+  display: inline-block;
   vertical-align: middle;
   border-spacing: 0;
   -webkit-transform: perspective(1px) translateZ(0);
   transform: perspective(1px) translateZ(0);
   box-shadow: 0 0 1px rgba(0, 0, 0, 0);
   position: relative;
-  overflow: hidden;
-}
+  overflow: hidden; }
 
-.linkhover:before{
-    content: "";
+.linkhover:before {
+  content: "";
   position: absolute;
   z-index: -1;
   left: 51%;
@@ -55,74 +47,123 @@ body {
   -webkit-transition-duration: 0.3s;
   transition-duration: 0.3s;
   -webkit-transition-timing-function: ease-out;
-  transition-timing-function: ease-out;
-}
+  transition-timing-function: ease-out; }
 
-.linkhover:hover:before{
-    left: 0;
-  right: 0;
-}
+.linkhover:hover:before {
+  left: 0;
+  right: 0; }
 
 /*Config. personalizada del main*/
+.titulos {
+  font-size: 2.5rem; }
 
-.main{
-    background-color: rgba(251, 242, 218, 1);
-    height: 100%;
-}
+.main {
+  background-color: #fbf2da;
+  height: 100%; }
 
 /*Config. personalizadas para el carousel de Inicio*/
+.carouselw {
+  width: 45%; }
 
-.carouselw{
-    width: 80%;
-}
-
-.imgcarousel{
-    object-fit: cover;
-}
+.imgcarousel {
+  object-fit: cover; }
 
 /*Config. personalizadas para parrafos*/
-
-.parrafo{
-    font-size: 1rem;
-    color:rgb(32, 29, 19);
-    line-height: 1.6;
-}
+.parrafo {
+  font-size: 1rem;
+  color: #201d13;
+  line-height: 1.6; }
 
 /*Config. cards de Nosotros*/
+.imgcard {
+  width: 70%;
+  margin: 0 auto; }
 
-.w-40{
-    width: 40%;
-}
+.cardh {
+  height: 90vh; }
 
-/*Config. buttons*/
+/*Config. main de Galeria (xq algo esta anulando el wrap automatico de la clase de bootstrap*/
+.galeria {
+  height: 100%;
+  flex-wrap: wrap; }
 
-.boton{
-    background-color: rgba(146, 95, 52, 0.705);
-}
+/*Config. cards de Galeria*/
+.imgcardgal {
+  margin: 0 auto;
+  padding: 0.5rem;
+  max-width: 100%;
+  max-height: 100%; }
+
+.flip-card {
+  width: 25%;
+  height: 70%;
+  display: flex;
+  background-color: transparent;
+  margin: 1rem;
+  perspective: 1000%; }
+
+.title {
+  font-size: 1.5em;
+  font-weight: 900;
+  text-align: center;
+  margin: 0; }
+
+.flip-card-inner {
+  position: relative;
+  margin: 1rem;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d; }
+
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg); }
+
+.flip-card-front, .flip-card-back {
+  box-shadow: 0 8px 14px 0 rgba(0, 0, 0, 0.2);
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  border: 1px solid #e2ca7b;
+  border-radius: 1rem; }
+
+.flip-card-front {
+  background: linear-gradient(to bottom, #e0ab17, #dcb435, #dabc4c, #d7c361, #d6ca75, #dad086, #dfd697, #e3dca8, #ece3bb, #f3eacd, #f9f2e1, #fdfaf4);
+  color: #965d2f; }
+
+.flip-card-back {
+  background: linear-gradient(to bottom, #e0ab17, #dcb435, #dabc4c, #d7c361, #d6ca75, #dad086, #dfd697, #e3dca8, #ece3bb, #f3eacd, #f9f2e1, #fdfaf4);
+  color: #6d4416;
+  transform: rotateY(180deg); }
+
+/*Config. buttons en Contacto*/
+.boton {
+  background-color: rgba(146, 95, 52, 0.705); }
 
 /*Config. ancho de logos en el footer*/
+.logofoo {
+  width: 100px;
+  height: 100px; }
 
-.logofoo{
-    width: 100px;
-    height: 100px;
-}
+.textfooter {
+  width: fit-content;
+  margin: 0 auto; }
 
-.textfooter{
-    width: fit-content;
-    margin: 0 auto;
-}
 /*color de elementos*/
+.hfcolor {
+  background-color: rgba(250, 221, 142, 0.541); }
 
-.hfcolor{
-    background-color: rgba(250, 221, 142, 0.541);
-}
+.h1color {
+  color: #301a07; }
 
-.titulos{
-    color: rgb(48, 26, 7);
-}
+.cardcolornos {
+  background-color: rgba(236, 201, 147, 0.308); }
 
-
-.color{
-    background-color: aqua;
-}
-
+.color {
+  background-color: aqua; }

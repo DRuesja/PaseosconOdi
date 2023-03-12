@@ -1,0 +1,127 @@
+@font-face{ 
+    font-family: "Montserrat", sans-serif;  
+    src: url("../assets/fonts/Montserrat-VariableFont_wght.ttf"); 
+} 
+body { 
+    font-family: "Montserrat", sans-serif; 
+}
+
+/*Personalizacion logo, necesaria para que se adapte siempre al contenedor sin necesidad de poner ancho fijo*/
+
+.logo{
+    width: 100%;
+}
+
+/*Tamaño del contenedor del logo en el Header*/
+
+.h-logo-widht{
+    width: 10%;
+}
+
+/*Personalizacion del navegador*/
+
+.ulflex{
+    width: 100%;
+    font-size: 1.2rem;
+    font-weight: 500;
+    text-shadow: 1px 4px 9px rgba(98,66,13,0.6);
+    justify-content: space-evenly;
+}
+
+/*Conf. del hover en Nav sacadas de IanHubb y personalizada*/
+
+.linkhover{
+    display: inline-block;
+  vertical-align: middle;
+  border-spacing: 0;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  position: relative;
+  overflow: hidden;
+}
+
+.linkhover:before{
+    content: "";
+  position: absolute;
+  z-index: -1;
+  left: 51%;
+  right: 51%;
+  bottom: 0;
+  background: #442003ec;
+  height: 4px;
+  -webkit-transition-property: left, right;
+  transition-property: left, right;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-timing-function: ease-out;
+  transition-timing-function: ease-out;
+}
+
+.linkhover:hover:before{
+    left: 0;
+  right: 0;
+}
+
+/*Config. personalizada del main*/
+
+.main{
+    background-color: rgba(251, 242, 218, 1);
+    height: 100%;
+}
+
+/*Config. personalizadas para el carousel de Inicio*/
+
+.carouselw{
+    width: 80%;
+}
+
+.imgcarousel{
+    object-fit: cover;
+}
+
+/*Config. personalizadas para parrafos*/
+
+.parrafo{
+    font-size: 1rem;
+    color:rgb(32, 29, 19);
+    line-height: 1.6;
+}
+
+/*Config. cards de Nosotros*/
+
+.w-40{
+    width: 40%;
+}
+
+/*Config. buttons*/
+
+.boton{
+    background-color: rgba(146, 95, 52, 0.705);
+}
+
+/*Config. ancho de logos en el footer*/
+
+.logofoo{
+    width: 100px;
+    height: 100px;
+}
+
+.textfooter{
+    width: fit-content;
+    margin: 0 auto;
+}
+/*color de elementos*/
+
+.hfcolor{
+    background-color: rgba(250, 221, 142, 0.541);
+}
+
+.titulos{
+    color: rgb(48, 26, 7);
+}
+
+
+.color{
+    background-color: aqua;
+}

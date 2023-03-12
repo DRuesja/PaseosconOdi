@@ -5,10 +5,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Paseos con Odi</title>
-    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <link rel="icon" href="../favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="../css/bootstrap.min.css">
     <link rel="stylesheet" href="../css/fontawesome.css">
     <link rel="stylesheet" href="../css/all.min.css">
+    <link rel="stylesheet" href="../css/aos.css">
     <link rel="stylesheet" href="../css/estilos.css">
 </head>
 <body>
@@ -43,37 +44,68 @@
               </nav>
         </header>
     </div>
-    <main class="main">
-        <h1 class="title">Galería</h1>
-
-        <!--detras de cada tarjeta va a estar una descripcion de cada perri de forma interactiva-->
-        
-        <section class="card"> 
-            <div class="cardgal">
-                <img src="../assets/img/Chiqui.jpg" alt="Chiqui">
-                <p class="fontcardgal">Chiquita</p>
+    <main class="container-fluid main">
+      <div class="row main">
+        <h1 class="text-center mt-4 mb-4 h1color titulos">Galería</h1>
+        <div class="row justify-content-around">
+          <!--Card 1-->
+          
+            <div class="flip-card">
+              <div class="flip-card-inner">
+                <div class="flip-card-front">
+                    <img src="../assets/img/Chiqui.jpg" class="imgcarousel imgcardgal" alt="Chiquita">
+                    <p class="title">Chiquita</p>
+                </div>
+                <div class="flip-card-back">
+                    <p class="title">CHIQUITA AMA EL CANIL Y COMER CALABAZA.</p>
+                </div>
+              </div>
             </div>
-            <div class="cardgal">
-                <img src="../assets/img/CocoeIndia.jpg" alt="CyI">
-                <p class="fontcardgal">Coco e India</p>
+          
+          <!--Card 2-->
+          
+            <div class="flip-card">
+              <div class="flip-card-inner">
+                <div class="flip-card-front">
+                    <img src="../assets/img/Chiqui.jpg" class="imgcarousel imgcardgal" alt="Chiquita">
+                    <p class="title">Chiquita</p>
+                </div>
+                <div class="flip-card-back">
+                    <p class="title">CHIQUITA AMA EL CANIL Y COMER CALABAZA.</p>
+                </div>
+              </div>
             </div>
-            <div class="cardgal">
-                <img src="../assets/img/Helga.jpg" alt="Helga">
-                <p class="fontcardgal">Helga</p>
+          
+          <!--Card 3-->
+          
+            <div class="flip-card">
+              <div class="flip-card-inner">
+                <div class="flip-card-front">
+                    <img src="../assets/img/Chiqui.jpg" class="imgcarousel imgcardgal" alt="Chiquita">
+                    <p class="title">Chiquita</p>
+                </div>
+                <div class="flip-card-back">
+                    <p class="title">CHIQUITA AMA EL CANIL Y COMER CALABAZA.</p>
+                </div>
+              </div>
             </div>
-            <div class="cardgal">
-                <img src="../assets/img/rocko.jpg" alt="Rocko">
-                <p class="fontcardgal">Rocko</p>
+          
+          <!--Card 4-->
+          
+            <div class="flip-card">
+              <div class="flip-card-inner">
+                <div class="flip-card-front">
+                    <img src="../assets/img/Chiqui.jpg" class="imgcarousel imgcardgal" alt="Chiquita">
+                    <p class="title">Chiquita</p>
+                </div>
+                <div class="flip-card-back">
+                    <p class="title">CHIQUITA AMA EL CANIL Y COMER CALABAZA.</p>
+                </div>
+              </div>
             </div>
-            <div class="cardgal">
-                <img src="../assets/img/Almayjules.jpg" alt="AlmayJ">
-                <p class="fontcardgal">Alma y Jules</p>
-            </div>
-            <div class="cardgal">
-                <img src="../assets/img/Moro.jpg" alt="Moro">
-                <p class="fontcardgal">Moro</p>
-            </div>
-    </section>
+          
+        </div>
+      </div>
     </main>
     <div class="container-fluid hfcolor ">
         <footer class="row justify-content-around" >
@@ -81,7 +113,7 @@
             <a href="../index.html"><img class="logofoo" src="../icono.png" alt="logo"></a>
           </div>
           <div class="col-auto  row-col-sm-auto m-2 p-0 order-first">
-            <a href="https://www.instagram.com/paseosconodi/" target="_blank"></a>
+            <a href="https://www.instagram.com/paseosconodi/" target="_blank">
               <script src="https://cdn.lordicon.com/ritcuqlt.js"></script>
               <lord-icon
                   src="https://cdn.lordicon.com/lxotnbfa.json"
@@ -92,7 +124,7 @@
             </a>
           </div>
           <div class="col-auto row-col-sm-auto m-2 p-0">
-            <a href="https://ne-np.facebook.com/profile.php?id=100070062176391" target="_blank"></a>
+            <a href="https://ne-np.facebook.com/profile.php?id=100070062176391" target="_blank">
               <script src="https://cdn.lordicon.com/ritcuqlt.js"></script>
               <lord-icon
                   src="https://cdn.lordicon.com/ganitnqp.json"
@@ -106,5 +138,9 @@
         </footer>
       </div>  
   <script src="../js/bootstrap.bundle.min.js"></script>
+  <script src="../js/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
 </body>
 </html>
