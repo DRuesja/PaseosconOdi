@@ -84,7 +84,6 @@ body {
 
 /*Config. main de Galeria (xq algo esta anulando el wrap automatico de la clase de bootstrap*/
 .galeria {
-  height: 100%;
   flex-wrap: wrap; }
 
 /*Config. cards de Galeria*/
