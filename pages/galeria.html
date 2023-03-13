@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Paseos con Odi</title>
-    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <link rel="icon" href="../favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="../css/bootstrap.min.css">
     <link rel="stylesheet" href="../css/fontawesome.css">
     <link rel="stylesheet" href="../css/all.min.css">
@@ -43,45 +43,146 @@
               </nav>
         </header>
     </div>
-    <main class="main">
-        <h1 class="title">Galería</h1>
-
-        <!--detras de cada tarjeta va a estar una descripcion de cada perri de forma interactiva-->
-        
-        <section class="card"> 
-            <div class="cardgal">
-                <img src="../assets/img/Chiqui.jpg" alt="Chiqui">
-                <p class="fontcardgal">Chiquita</p>
+    <main class="container-fluid">
+      <div class="row m-maing main"> <!--tuve que agregar un margin bottom con una clase para que el contenido no generara un overflow-->
+        <h1 class="text-center mt-5 mb-5 h1color titulos">GALERIA</h1>
+        <div class="row justify-content-around galeria p-0">
+          <!--Card 1-->
+          <div class="col-xxl-4 col-xl-4 col-lg-6 col-md-6 col-sm-12 p-0">
+            <div class="flip-card">
+              <div class="flip-card-inner">
+                <div class="flip-card-front">
+                    <img src="../assets/img/Chiqui.jpg" class="imgcarousel imgcardgal" alt="Chiquita">
+                    <p class="title">Chiquita</p>
+                </div>
+                <div class="flip-card-back">
+                    <p class="title">CHIQUITA AMA EL CANIL Y COMER CALABAZA.</p>
+                </div>
+              </div>
             </div>
-            <div class="cardgal">
-                <img src="../assets/img/CocoeIndia.jpg" alt="CyI">
-                <p class="fontcardgal">Coco e India</p>
+          </div>
+          <!--Card 2-->
+          <div class="col-xxl-4 col-xl-4 col-lg-6 col-md-6 col-sm-12 p-0">
+            <div class="flip-card">
+              <div class="flip-card-inner">
+                <div class="flip-card-front">
+                    <img src="../assets/img/Moro.jpg" class="imgcarousel imgcardgal" alt="Moro">
+                    <p class="title">Morito</p>
+                </div>
+                <div class="flip-card-back">
+                    <p class="title">MORITO, EL ABUELO SLACHICHA, VERLO SONREIR EN LOS PASEOS ALEGRA EL MUNDO.</p>
+                </div>
+              </div>
             </div>
-            <div class="cardgal">
-                <img src="../assets/img/Helga.jpg" alt="Helga">
-                <p class="fontcardgal">Helga</p>
+          </div>
+          <!--Card 3-->
+          <div class="col-xxl-4 col-xl-4 col-lg-6 col-md-6 col-sm-12 p-0">
+            <div class="flip-card">
+              <div class="flip-card-inner">
+                <div class="flip-card-front">
+                    <img src="../assets/img/Almayjackye.jpg" class="imgcarousel imgcardgal" alt="Almayjackye">
+                    <p class="title">Alma y Jackie</p>
+                </div>
+                <div class="flip-card-back">
+                    <p class="title">ALMA Y JACKIE AMAN CAZAR PELOTAS JUNTAS.</p>
+                </div>
+              </div>
             </div>
-            <div class="cardgal">
-                <img src="../assets/img/rocko.jpg" alt="Rocko">
-                <p class="fontcardgal">Rocko</p>
+          </div>
+          <!--Card 4-->
+          <div class="col-xxl-4 col-xl-4 col-lg-6 col-md-6 col-sm-12 p-0">
+            <div class="flip-card">
+              <div class="flip-card-inner">
+                <div class="flip-card-front">
+                    <img src="../assets/img/Helga.jpg" class="imgcarousel imgcardgal" alt="Helga">
+                    <p class="title">Helga</p>
+                </div>
+                <div class="flip-card-back">
+                    <p class="title">HELGA DISFRUTA DE EXPLORAR EL CANIL CON SU HERMANO.</p>
+                </div>
+              </div>
             </div>
-            <div class="cardgal">
-                <img src="../assets/img/Almayjules.jpg" alt="AlmayJ">
-                <p class="fontcardgal">Alma y Jules</p>
+          </div>
+          <!--Card 5-->
+          <div class="col-xxl-4 col-xl-4 col-lg-6 col-md-6 col-sm-12 p-0">
+            <div class="flip-card">
+              <div class="flip-card-inner">
+                <div class="flip-card-front">
+                    <img src="../assets/img/Flora.jpg" class="imgcarousel imgcardgal" alt="Flora">
+                    <p class="title">Flora</p>
+                </div>
+                <div class="flip-card-back">
+                    <p class="title">FLORA CAZA BICHITOS Y JUEGA A CAZARCE CON SUS AMIGOS.</p>
+                </div>
+              </div>
             </div>
-            <div class="cardgal">
-                <img src="../assets/img/Moro.jpg" alt="Moro">
-                <p class="fontcardgal">Moro</p>
+          </div>
+          <!--Card 6-->
+          <div class="col-xxl-4 col-xl-4 col-lg-6 col-md-6 col-sm-12 p-0">
+            <div class="flip-card">
+              <div class="flip-card-inner">
+                <div class="flip-card-front">
+                    <img src="../assets/img/indiaycoco.jpg" class="imgcarousel imgcardgal" alt="India">
+                    <p class="title">India</p>
+                </div>
+                <div class="flip-card-back">
+                    <p class="title">INDIA DISFRUTA TOMAR SOL Y QUE LE RASQUEN LA CABEZA.</p>
+                </div>
+              </div>
             </div>
-    </section>
+          </div>
+          <!--Card 7-->
+          <div class="col-xxl-4 col-xl-4 col-lg-6 col-md-6 col-sm-12 p-0">
+            <div class="flip-card">
+              <div class="flip-card-inner">
+                <div class="flip-card-front">
+                    <img src="../assets/img/Libi.jpg" class="imgcarousel imgcardgal" alt="Libi">
+                    <p class="title">Libertad</p>
+                </div>
+                <div class="flip-card-back">
+                    <p class="title">LIBERTAD AMA DECLARARSE REINA D ELA PELOTA, SI LA CAZO ES SUYA PARA SIEMPRE.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!--Card 8-->
+          <div class="col-xxl-4 col-xl-4 col-lg-6 col-md-6 col-sm-12 p-0">
+            <div class="flip-card">
+              <div class="flip-card-inner">
+                <div class="flip-card-front">
+                    <img src="../assets/img/CocoeIndia.jpg" class="imgcarousel imgcardgal" alt="CocoeIndia">
+                    <p class="title">Coco</p>
+                </div>
+                <div class="flip-card-back">
+                    <p class="title">COCO ES EL BEBE ETERNO DE LA MANADA,LO QUE MÁS DISFRUTA ES ESTAR RODEADO DE SUS AMIGOS.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!--Card 9-->
+          <div class="col-xxl-4 col-xl-4 col-lg-6 col-md-6 col-sm-12 p-0">
+            <div class="flip-card">
+              <div class="flip-card-inner">
+                <div class="flip-card-front">
+                    <img src="../assets/img/Almayjules.jpg" class="imgcarousel imgcardgal" alt="Almayjules">
+                    <p class="title">Alma y Jules</p>
+                </div>
+                <div class="flip-card-back">
+                    <p class="title">ALMA ES LA ALFITA DE LA MANADA, JULES EL SEÑOR REFLEXIVO.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </main>
-    <div class="container-fluid hfcolor ">
+    <div class="container-fluid hfcolor">
         <footer class="row justify-content-around" >
           <div class="col-auto row-col-sm-auto m-2 p-0">
             <a href="../index.html"><img class="logofoo" src="../icono.png" alt="logo"></a>
           </div>
           <div class="col-auto  row-col-sm-auto m-2 p-0 order-first">
-            <a href="https://www.instagram.com/paseosconodi/" target="_blank"></a>
+            <a href="https://www.instagram.com/paseosconodi/" target="_blank">
               <script src="https://cdn.lordicon.com/ritcuqlt.js"></script>
               <lord-icon
                   src="https://cdn.lordicon.com/lxotnbfa.json"
@@ -92,7 +193,7 @@
             </a>
           </div>
           <div class="col-auto row-col-sm-auto m-2 p-0">
-            <a href="https://ne-np.facebook.com/profile.php?id=100070062176391" target="_blank"></a>
+            <a href="https://ne-np.facebook.com/profile.php?id=100070062176391" target="_blank">
               <script src="https://cdn.lordicon.com/ritcuqlt.js"></script>
               <lord-icon
                   src="https://cdn.lordicon.com/ganitnqp.json"
