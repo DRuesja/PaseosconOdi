@@ -1,13 +1,12 @@
 @import "colores";
 main{
     .main{
-        background-color: $color_fondos;
-        height: 100%; 
-        .h1color{
-            color: $color_textos;          
-        }
+        background-image: $color_fondo;
+        height: 100%;
         .titulos{
             font-size: 2.5rem;
+            color: $color_titulos;
+            text-shadow: $color_texshadows;
         }
         .carouselw{
             width: 45%;

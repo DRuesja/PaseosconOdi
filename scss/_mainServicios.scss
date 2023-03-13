@@ -1,0 +1,66 @@
+.container-fluid{
+    .main{
+        .vidshadow{
+            box-shadow: $color_sombras;
+            -webkit-box-shadow: $color_sombras;
+            -moz-box-shadow: $color_sombras;
+        }
+        /*Acá tengo un error en la animación del divider que no tuve tiempo de corregir*/
+        .divider{
+            display: flex;
+            
+            &:before,
+            &:after {
+              content: "";
+              flex: 1;
+            }
+          }
+        .line{
+            align-items: center;
+            margin: 1em -1em;
+            
+            &:before,
+            &:after {
+              height: 1px;
+              margin: 0 1em;
+            }
+          }
+          .glow{
+            &:before,
+            &:after {
+              height: 6px;
+              filter: blur(5px);
+              -webkit-filter: blur(5px);
+              border-radius: 5px;
+            }
+            
+            &:before{
+              background: $color_separadorR;
+            }
+            
+            &:after{
+              background: $color_separadorL;
+            }
+          }
+        div{
+            .tabla{
+                width: 40%;
+                text-align: center;
+                border: 2px solid $color_borde;
+                background-color: $color_tabla;
+                padding: 2rem;
+                margin: 0 auto;
+                font-size: 1.5rem;
+                font-weight: bold;
+                line-height: 1.4em;
+                font-style: normal;
+                border-collapse:separate;
+                margin-top: 2rem;
+                margin-bottom: 5rem;
+                box-shadow: $color_sombras;
+                -webkit-box-shadow: $color_sombras;
+                -moz-box-shadow: $color_sombras; 
+            }
+        }      
+    }
+}

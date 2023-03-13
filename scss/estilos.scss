@@ -1,17 +1,46 @@
 @import "colores";
 @import "header";
 @import "mainInicio";
+@import "mainNosotros";
+@import "mainServicios";
+@import "mainGaleria";
+@import "footer";
 
 @font-face{ 
     font-family: "Montserrat", sans-serif;  
     src: url("../assets/fonts/Montserrat-VariableFont_wght.ttf"); 
 }
 
+/*Mq para main de Inicio*/
+
+@media  screen and (max-width: 1200px) {
+  main{
+    .main{
+        .carouselw{
+            width: 70%;
+        }
+    }
+}
+}
+  
+
 @media screen and (max-width: 767px) {
     
     .flip-card-inner {
         width: 50% !important;
         height: 550px !important;
+}
+}
+
+/*Mq para main de Inicio*/
+
+@media  screen and (max-width:600px) {
+  main{
+    .main{
+        .carouselw{
+            width: 90%;
+        }
+    }
 }
 }
 
@@ -31,6 +60,7 @@ body {
 
 .logo{
     width: 100%;
+    margin-left: 1rem;
 }
 
 /*Tamaño del contenedor del logo en el Header*/
@@ -47,153 +77,6 @@ body {
     line-height: 1.6;
 }
 
-
-/*Config. cards de Nosotros*/
-
-.imgcard{
-    width: 70%;
-    margin: 0 auto;
-}
-.cardh{
-    height: 90vh;
-}
-
-/*Config. main de Galeria (xq algo esta anulando el wrap automatico de la clase de bootstrap*/
-
-.galeria{
-    flex-wrap: wrap;
-}
-
-/*Config. cards de Galeria*/
-
-.imgcardgal{
-    margin: 0 auto;
-    padding: 0.5rem;
-    max-width: 90%;
-    max-height: 90%;
-}
-
-.flip-card {
-    height: 100%;
-    display: flex;
-    background-color: transparent;
-    perspective: 1000px;
-  }
-  
-  .title {
-    font-size: 1.5em;
-    font-weight: 900;
-    text-align: center;
-    margin: 0;
-  }
-  
-  .flip-card-inner {
-    position: relative;
-    margin: 0 auto;
-    width: 70%;
-    height: 550px;
-    text-align: center;
-    transition: transform 0.8s;
-    transform-style: preserve-3d;
-    margin-bottom: 2rem;
-  }
-  
-  .flip-card:hover .flip-card-inner {
-    transform: rotateY(180deg);
-  }
-  
-  .flip-card-front, .flip-card-back {
-    box-shadow: 0 8px 14px 0 rgba(0,0,0,0.2);
-    position: absolute;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    width: 100%;
-    height: 100%; /*control altura de cards visible*/
-    -webkit-backface-visibility: hidden;
-    backface-visibility: hidden;
-    border: 1px solid rgb(226, 202, 123);
-    border-radius: 1rem;
-  }
-  
-  .flip-card-front {
-    background: linear-gradient(to bottom, #e0ab17, #dcb435, #dabc4c, #d7c361, #d6ca75, #dad086, #dfd697, #e3dca8, #ece3bb, #f3eacd, #f9f2e1, #fdfaf4);
-    color: rgb(150, 93, 47);
-  }
-  
-  .flip-card-back {
-    background: linear-gradient(to bottom, #e0ab17, #dcb435, #dabc4c, #d7c361, #d6ca75, #dad086, #dfd697, #e3dca8, #ece3bb, #f3eacd, #f9f2e1, #fdfaf4);
-    color: rgb(109, 68, 22);
-    transform: rotateY(180deg);
-  }
-
-  /*Config. margen del main de galeria para evitar overflow del contenido*/
-
-  .m-maing{
-    padding-bottom: 3rem;
-  }
-/*Conf. borde divisor e pagina de Servicios.*/
-
-.divider {
-    display: flex;
-    
-    &:before,
-    &:after {
-      content: "";
-      flex: 1;
-    }
-  }
-
-  .line {
-    align-items: center;
-    margin: 1em -1em;
-    
-    &:before,
-    &:after {
-      height: 1px;
-      margin: 0 1em;
-    }
-  }
-
-  .glow {
-    &:before,
-    &:after {
-      height: 6px;
-      filter: blur(5px);
-      -webkit-filter: blur(5px);
-      border-radius: 5px;
-    }
-    
-    &:before {
-      background: linear-gradient(to right, blue, hotpink);
-    }
-    
-    &:after {
-      background: linear-gradient(to left, blue, hotpink);
-    }
-  }
-
-/*Conf. tabla en pagina Servicios*/
-
-.tabla{
-    width: 40%;
-    text-align: center;
-    border: 2px solid rgb(110, 88, 40);
-    background-color: #bbb18f;
-    padding: 2rem;
-    margin: 0 auto;
-    font-size: 1.5rem;
-    font-weight: bold;
-    line-height: 1.4em;
-    font-style: normal;
-    border-collapse:separate;
-    margin-top: 2rem;
-    margin-bottom: 5rem;
-    box-shadow: 10px 14px 22px 9px rgba(145,116,42,0.75);
-    -webkit-box-shadow: 10px 14px 22px 9px rgba(145,116,42,0.75);
-    -moz-box-shadow: 10px 14px 22px 9px rgba(145,116,42,0.75); 
-}
-
 /*Config. buttons en Contacto*/
 
 .boton{
@@ -202,21 +85,9 @@ body {
 
 /*Config. ancho de logos en el footer*/
 
-.logofoo{
-    width: 100px;
-    height: 100px;
-}
-
 .textfooter{
     width: fit-content;
     margin: 0 auto;
 }
-/*color de elementos*/
 
-.h1color{
-    color: rgb(48, 26, 7);
-}
 
-.cardcolornos{
-    background-color: rgba(236, 201, 147, 0.308);
-}
