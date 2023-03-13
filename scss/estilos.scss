@@ -1,7 +1,28 @@
+@import "colores";
+@import "header";
+@import "mainInicio";
+
 @font-face{ 
     font-family: "Montserrat", sans-serif;  
     src: url("../assets/fonts/Montserrat-VariableFont_wght.ttf"); 
-} 
+}
+
+@media screen and (max-width: 767px) {
+    
+    .flip-card-inner {
+        width: 50% !important;
+        height: 550px !important;
+}
+}
+
+@media screen and (max-width: 500px) {
+    
+    .flip-card-inner {
+        width: 80% !important;
+        height: 500px !important;
+}
+}
+
 body { 
     font-family: "Montserrat", sans-serif; 
 }
@@ -16,73 +37,6 @@ body {
 
 .h-logo-widht{
     width: 6%;
-}
-
-/*Personalizacion del navegador*/
-
-.ulflex{
-    width: 100%;
-    font-size: 1.2rem;
-    font-weight: 500;
-    text-shadow: 1px 4px 9px rgba(98,66,13,0.6);
-    justify-content: space-evenly;
-}
-
-/*Conf. del hover en Nav sacadas de IanHubb y personalizada*/
-
-.linkhover{
-    display: inline-block;
-  vertical-align: middle;
-  border-spacing: 0;
-  -webkit-transform: perspective(1px) translateZ(0);
-  transform: perspective(1px) translateZ(0);
-  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
-  position: relative;
-  overflow: hidden;
-}
-
-.linkhover:before{
-    content: "";
-  position: absolute;
-  z-index: -1;
-  left: 51%;
-  right: 51%;
-  bottom: 0;
-  background: #442003ec;
-  height: 4px;
-  -webkit-transition-property: left, right;
-  transition-property: left, right;
-  -webkit-transition-duration: 0.3s;
-  transition-duration: 0.3s;
-  -webkit-transition-timing-function: ease-out;
-  transition-timing-function: ease-out;
-}
-
-.linkhover:hover:before{
-    left: 0;
-  right: 0;
-}
-
-/*Config. personalizada del main*/
-
-.titulos{
-    font-size: 2.5rem;
-}
-
-
-.main{
-    background-color: rgba(251, 242, 218, 1);
-    height: 100%;
-}
-
-/*Config. personalizadas para el carousel de Inicio*/
-
-.carouselw{
-    width: 45%;
-}
-
-.imgcarousel{
-    object-fit: cover;
 }
 
 /*Config. personalizadas para parrafos*/
@@ -115,17 +69,15 @@ body {
 .imgcardgal{
     margin: 0 auto;
     padding: 0.5rem;
-    max-width: 100%;
-    max-height: 100%;
+    max-width: 90%;
+    max-height: 90%;
 }
 
 .flip-card {
-    width: 25%;
-    height: 70%;
+    height: 100%;
     display: flex;
     background-color: transparent;
-    margin: 1rem;
-    perspective: 1000%;
+    perspective: 1000px;
   }
   
   .title {
@@ -137,12 +89,13 @@ body {
   
   .flip-card-inner {
     position: relative;
-    margin: 1rem;
-    width: 100%;
-    height: 100%;
+    margin: 0 auto;
+    width: 70%;
+    height: 550px;
     text-align: center;
     transition: transform 0.8s;
     transform-style: preserve-3d;
+    margin-bottom: 2rem;
   }
   
   .flip-card:hover .flip-card-inner {
@@ -156,7 +109,7 @@ body {
     flex-direction: column;
     justify-content: center;
     width: 100%;
-    height: 100%;
+    height: 100%; /*control altura de cards visible*/
     -webkit-backface-visibility: hidden;
     backface-visibility: hidden;
     border: 1px solid rgb(226, 202, 123);
@@ -173,6 +126,73 @@ body {
     color: rgb(109, 68, 22);
     transform: rotateY(180deg);
   }
+
+  /*Config. margen del main de galeria para evitar overflow del contenido*/
+
+  .m-maing{
+    padding-bottom: 3rem;
+  }
+/*Conf. borde divisor e pagina de Servicios.*/
+
+.divider {
+    display: flex;
+    
+    &:before,
+    &:after {
+      content: "";
+      flex: 1;
+    }
+  }
+
+  .line {
+    align-items: center;
+    margin: 1em -1em;
+    
+    &:before,
+    &:after {
+      height: 1px;
+      margin: 0 1em;
+    }
+  }
+
+  .glow {
+    &:before,
+    &:after {
+      height: 6px;
+      filter: blur(5px);
+      -webkit-filter: blur(5px);
+      border-radius: 5px;
+    }
+    
+    &:before {
+      background: linear-gradient(to right, blue, hotpink);
+    }
+    
+    &:after {
+      background: linear-gradient(to left, blue, hotpink);
+    }
+  }
+
+/*Conf. tabla en pagina Servicios*/
+
+.tabla{
+    width: 40%;
+    text-align: center;
+    border: 2px solid rgb(110, 88, 40);
+    background-color: #bbb18f;
+    padding: 2rem;
+    margin: 0 auto;
+    font-size: 1.5rem;
+    font-weight: bold;
+    line-height: 1.4em;
+    font-style: normal;
+    border-collapse:separate;
+    margin-top: 2rem;
+    margin-bottom: 5rem;
+    box-shadow: 10px 14px 22px 9px rgba(145,116,42,0.75);
+    -webkit-box-shadow: 10px 14px 22px 9px rgba(145,116,42,0.75);
+    -moz-box-shadow: 10px 14px 22px 9px rgba(145,116,42,0.75); 
+}
 
 /*Config. buttons en Contacto*/
 
@@ -193,18 +213,10 @@ body {
 }
 /*color de elementos*/
 
-.hfcolor{
-    background-color: rgba(250, 221, 142, 0.541);
-}
-
 .h1color{
     color: rgb(48, 26, 7);
 }
 
 .cardcolornos{
     background-color: rgba(236, 201, 147, 0.308);
-}
-
-.color{
-    background-color: aqua;
 }

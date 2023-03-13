@@ -1,0 +1,24 @@
+@import "colores";
+main{
+    .main{
+        background-color: $color_fondos;
+        height: 100%; 
+        .h1color{
+            color: $color_textos;          
+        }
+        .titulos{
+            font-size: 2.5rem;
+        }
+        .carouselw{
+            width: 45%;
+            div{
+                div{
+                    .imgcarousel{
+                        object-fit: cover;
+                    }
+                }
+            }
+        }
+
+    }
+}
