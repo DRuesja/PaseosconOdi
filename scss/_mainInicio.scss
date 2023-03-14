@@ -9,7 +9,7 @@ main{
             text-shadow: $color_texshadows;
         }
         .carouselw{
-            width: 45%;
+            width: map-get($width,w-45);
             div{
                 div{
                     .imgcarousel{

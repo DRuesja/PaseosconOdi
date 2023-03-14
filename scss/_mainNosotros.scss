@@ -6,7 +6,7 @@
                     background-color: $color_cardnos;
                 }
                 .imgcard{
-                    width: 70%;
+                    width: map-get($width,w-70);
                     margin: 0 auto;
                 }
             }

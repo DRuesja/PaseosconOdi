@@ -156,7 +156,6 @@ main .main {
 .hfcolor {
   background-color: #fbf3d8; }
   .hfcolor footer div .logofoo {
-    width: 100px;
     height: 100px; }
 
 @font-face {
@@ -168,6 +167,7 @@ main .main {
   main .main .carouselw {
     width: 70%; } }
 
+/*Mq para cards de Galeria*/
 @media screen and (max-width: 767px) {
   .flip-card-inner {
     width: 50% !important;
@@ -178,6 +178,7 @@ main .main {
   main .main .carouselw {
     width: 90%; } }
 
+/*Mq para cards de Galeria*/
 @media screen and (max-width: 500px) {
   .flip-card-inner {
     width: 80% !important;
@@ -191,10 +192,6 @@ body {
   width: 100%;
   margin-left: 1rem; }
 
-/*Tamaño del contenedor del logo en el Header*/
-.h-logo-widht {
-  width: 6%; }
-
 /*Config. personalizadas para parrafos*/
 .parrafo {
   font-size: 1rem;
@@ -202,10 +199,31 @@ body {
   line-height: 1.6; }
 
 /*Config. buttons en Contacto*/
-.boton {
+.boton, .botonaceptar, .botoncancelar {
+  padding: 17px 40px;
+  border-radius: 50px;
+  border: 0;
+  box-shadow: 41px 25px 43px -4px rgba(102, 76, 55, 0.75) 0 0 8px;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  font-size: 15px;
+  transition: all .5s ease; }
+
+.botonaceptar {
   background-color: rgba(146, 95, 52, 0.705); }
 
-/*Config. ancho de logos en el footer*/
-.textfooter {
-  width: fit-content;
+.botoncancelar {
+  background-color: yellow; }
+
+.cardadopta {
+  border-radius: 30px;
+  background: linear-gradient(0deg, #fbf3d8 0%, rgba(213, 175, 35, 0.879989) 44%, white 100%);
+  box-shadow: 15px 15px 30px #bebebe, -15px -15px 30px #ffffff;
+  width: 25%; }
+
+.imgadopta {
+  max-width: 95%;
+  max-height: 100%;
+  object-fit: cover;
+  padding: 2rem;
   margin: 0 auto; }

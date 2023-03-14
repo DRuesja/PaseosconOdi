@@ -4,11 +4,11 @@
         .navbar{
             .container-fluid{
                 .h-logo-widht{
-                    width: 6%;
+                    width: map-get($width, w-logo);
                 }
                 .collapse{
                     .ulflex{
-                        width: 100%;
+                        width: map-get($width,w-100);
                         font-size: 1.2rem;
                         font-weight: 500;
                         text-shadow: 1px 4px 9px $color_sombras;

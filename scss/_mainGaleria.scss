@@ -15,7 +15,7 @@
                     .flip-card-inner {
                         position: relative;
                         margin: 0 auto;
-                        width: 70%;
+                        width: map-get($width,w-70);
                         height: 550px;
                         text-align: center;
                         transition: transform 0.8s;
@@ -27,7 +27,7 @@
                             display: flex;
                             flex-direction: column;
                             justify-content: center;
-                            width: 100%;
+                            width: map-get($width,w-100);
                             height: 100%; /*control altura de cards visible*/
                             -webkit-backface-visibility: hidden;
                             backface-visibility: hidden;
@@ -41,7 +41,7 @@
                                 .imgcardgal{
                                     margin: 0 auto;
                                     padding: 0.5rem;
-                                    max-width: 90%;
+                                    max-width: map-get($width,w-90);
                                     max-height: 90%;
                                 }
 

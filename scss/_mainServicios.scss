@@ -44,7 +44,7 @@
           }
         div{
             .tabla{
-                width: 40%;
+                width: map-get($width,w-40);
                 text-align: center;
                 border: 2px solid $color_borde;
                 background-color: $color_tabla;
