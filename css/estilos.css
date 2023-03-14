@@ -3,7 +3,7 @@
 /*Mixin usado en las clases de las cards de galeria*/
 /*Mq para main de Inicio*/
 @media screen and (max-width: 1200px) {
-  main .main .carouselw {
+  .container-fluid .main .carouselw {
     width: 70%; } }
 
 /*Mq para cards de Galeria*/
