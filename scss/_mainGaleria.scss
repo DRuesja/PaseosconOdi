@@ -13,22 +13,21 @@
                         transform: rotateY(180deg);
                       }
                     .flip-card-inner {
-                        position: relative;
+                        @include position-height (relative,550px);
                         margin: 0 auto;
                         width: map-get($width,w-70);
-                        height: 550px;
                         text-align: center;
                         transition: transform 0.8s;
                         transform-style: preserve-3d;
                         margin-bottom: 2rem;
+                        /*esta clase controla la altura visible de las cards*/
                         .flip-card-front, .flip-card-back {
+                            @include position-height(absolute,100%);
                             box-shadow: 0 8px 14px 0 $color_sombras;
-                            position: absolute;
                             display: flex;
                             flex-direction: column;
                             justify-content: center;
                             width: map-get($width,w-100);
-                            height: 100%; /*control altura de cards visible*/
                             -webkit-backface-visibility: hidden;
                             backface-visibility: hidden;
                             border: 1px solid $color_cardgalb;

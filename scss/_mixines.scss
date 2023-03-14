@@ -1,7 +1,7 @@
-@mixin border-background-shadow ($radio,$color){
-    border-radius: $radio;
-    background: $color;
-    box-shadow: 15px 15px 30px #bebebe,
-               -15px -15px 30px #ffffff;
+/*Mixin usado en las clases de las cards de galeria*/
+
+@mixin position-height ($position,$height){
+    position: $position;
+    height: $height;
 }
 

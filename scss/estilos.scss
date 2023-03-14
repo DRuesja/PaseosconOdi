@@ -1,6 +1,7 @@
 @import "colores";
 @import "maps";
 @import "mixines";
+@import "mediaqueries";
 @import "header";
 @import "mainInicio";
 @import "mainNosotros";
@@ -11,50 +12,6 @@
 @font-face{ 
     font-family: "Montserrat", sans-serif;  
     src: url("../assets/fonts/Montserrat-VariableFont_wght.ttf"); 
-}
-
-/*Mq para main de Inicio*/
-
-@media  screen and (max-width: 1200px) {
-  main{
-    .main{
-        .carouselw{
-            width: map-get($width,w-70);
-        }
-    }
-}
-}
-  
-/*Mq para cards de Galeria*/
-
-@media screen and (max-width: 767px) {
-    
-    .flip-card-inner {
-        width: map-get($width,w-50) !important;
-        height: 550px !important;
-}
-}
-
-/*Mq para main de Inicio*/
-
-@media  screen and (max-width:600px) {
-  main{
-    .main{
-        .carouselw{
-            width: map-get($width,w-90);
-        }
-    }
-}
-}
-
-/*Mq para cards de Galeria*/
-
-@media screen and (max-width: 500px) {
-    
-    .flip-card-inner {
-        width: map-get($width,w-80) !important;
-        height: 500px !important;
-}
 }
 
 body { 
@@ -98,16 +55,3 @@ body {
     @extend .boton;
     background-color: $color_botoncancelar;
 }
-
-.cardadopta{
-    @include border-background-shadow (30px,$color_fondo);
-    width: 25%;
-  }
-
-  .imgadopta{
-    max-width: 95%;
-    max-height: 100%;
-    object-fit: cover;
-    padding: 2rem;
-    margin: 0 auto;
-  }

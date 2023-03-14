@@ -1,4 +1,26 @@
-@import "colores";
+.container-fluid{
+    .main{
+        background-image: $color_fondo;
+        height: 100%;
+        .titulos{
+            font-size: 2.5rem;
+            color: $color_titulos;
+            text-shadow: $color_texshadows;
+        }
+        .carouselw{
+            width: map-get($width,w-45);
+            .carousel-inner{
+                .carousel-item{
+                    .imgcarousel{
+                        object-fit: cover;
+                    }
+                }
+            }
+        }
+    }
+}
+
+/*
 main{
     .main{
         background-image: $color_fondo;
@@ -20,4 +42,4 @@ main{
         }
 
     }
-}
+}*/

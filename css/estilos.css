@@ -1,5 +1,28 @@
 @charset "UTF-8";
 /*color base del main en todas las paginas*/
+/*Mixin usado en las clases de las cards de galeria*/
+/*Mq para main de Inicio*/
+@media screen and (max-width: 1200px) {
+  main .main .carouselw {
+    width: 70%; } }
+
+/*Mq para cards de Galeria*/
+@media screen and (max-width: 767px) {
+  .container-fluid .m-maing .galeria .col-xxl-4 .flip-card .flip-card-inner {
+    width: 50% !important;
+    height: 550px !important; } }
+
+/*Mq para main de Inicio*/
+@media screen and (max-width: 600px) {
+  .container-fluid .main .carouselw {
+    width: 90%; } }
+
+/*Mq para cards de Galeria*/
+@media screen and (max-width: 500px) {
+  .container-fluid .m-maing .galeria .col-xxl-4 .flip-card .flip-card-inner {
+    width: 80% !important;
+    height: 500px !important; } }
+
 .sticky-top .hfcolor {
   background-color: rgba(255, 255, 255, 0.61); }
   .sticky-top .hfcolor .navbar .container-fluid .h-logo-widht {
@@ -38,23 +61,45 @@
         left: 0;
         right: 0; }
 
-/*color base del main en todas las paginas*/
-main .main {
+.container-fluid .main {
   background-image: linear-gradient(0deg, #fbf3d8 0%, rgba(213, 175, 35, 0.879989) 44%, white 100%);
   height: 100%; }
-  main .main .titulos {
+  .container-fluid .main .titulos {
     font-size: 2.5rem;
     color: #271c05;
     text-shadow: 8px 4px 8px rgba(103, 93, 78, 0.76); }
-  main .main .carouselw {
+  .container-fluid .main .carouselw {
     width: 45%; }
-    main .main .carouselw div div .imgcarousel {
+    .container-fluid .main .carouselw .carousel-inner .carousel-item .imgcarousel {
       object-fit: cover; }
 
-.main .main .row .col-xl-4 .cardcolornos {
+/*
+main{
+    .main{
+        background-image: $color_fondo;
+        height: 100%;
+        .titulos{
+            font-size: 2.5rem;
+            color: $color_titulos;
+            text-shadow: $color_texshadows;
+        }
+        .carouselw{
+            width: map-get($width,w-45);
+            div{
+                div{
+                    .imgcarousel{
+                        object-fit: cover;
+                    }
+                }
+            }
+        }
+
+    }
+}*/
+.main .row .col-xl-4 .cardcolornos {
   background-color: #fbf3d84d; }
 
-.main .main .row .col-xl-4 .imgcard {
+.main .row .col-xl-4 .imgcard {
   width: 70%;
   margin: 0 auto; }
 
@@ -115,22 +160,22 @@ main .main {
         transform: rotateY(180deg); }
       .container-fluid .m-maing .galeria .col-xxl-4 .flip-card .flip-card-inner {
         position: relative;
+        height: 550px;
         margin: 0 auto;
         width: 70%;
-        height: 550px;
         text-align: center;
         transition: transform 0.8s;
         transform-style: preserve-3d;
-        margin-bottom: 2rem; }
+        margin-bottom: 2rem;
+        /*esta clase controla la altura visible de las cards*/ }
         .container-fluid .m-maing .galeria .col-xxl-4 .flip-card .flip-card-inner .flip-card-front, .container-fluid .m-maing .galeria .col-xxl-4 .flip-card .flip-card-inner .flip-card-back {
-          box-shadow: 0 8px 14px 0 41px 25px 43px -4px rgba(102, 76, 55, 0.75);
           position: absolute;
+          height: 100%;
+          box-shadow: 0 8px 14px 0 41px 25px 43px -4px rgba(102, 76, 55, 0.75);
           display: flex;
           flex-direction: column;
           justify-content: center;
           width: 100%;
-          height: 100%;
-          /*control altura de cards visible*/
           -webkit-backface-visibility: hidden;
           backface-visibility: hidden;
           border: 1px solid #e2ca7b;
@@ -162,28 +207,6 @@ main .main {
   font-family: "Montserrat", sans-serif;
   src: url("../assets/fonts/Montserrat-VariableFont_wght.ttf"); }
 
-/*Mq para main de Inicio*/
-@media screen and (max-width: 1200px) {
-  main .main .carouselw {
-    width: 70%; } }
-
-/*Mq para cards de Galeria*/
-@media screen and (max-width: 767px) {
-  .flip-card-inner {
-    width: 50% !important;
-    height: 550px !important; } }
-
-/*Mq para main de Inicio*/
-@media screen and (max-width: 600px) {
-  main .main .carouselw {
-    width: 90%; } }
-
-/*Mq para cards de Galeria*/
-@media screen and (max-width: 500px) {
-  .flip-card-inner {
-    width: 80% !important;
-    height: 500px !important; } }
-
 body {
   font-family: "Montserrat", sans-serif; }
 
@@ -214,16 +237,3 @@ body {
 
 .botoncancelar {
   background-color: yellow; }
-
-.cardadopta {
-  border-radius: 30px;
-  background: linear-gradient(0deg, #fbf3d8 0%, rgba(213, 175, 35, 0.879989) 44%, white 100%);
-  box-shadow: 15px 15px 30px #bebebe, -15px -15px 30px #ffffff;
-  width: 25%; }
-
-.imgadopta {
-  max-width: 95%;
-  max-height: 100%;
-  object-fit: cover;
-  padding: 2rem;
-  margin: 0 auto; }
