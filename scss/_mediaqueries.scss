@@ -1,12 +1,31 @@
+/*Mq para cards de Galeria*/
+
+@media screen and (max-width: 500px) {
+    .container-fluid{
+        .m-maing{
+            .galeria{
+                .col-xxl-4{
+                    .flip-card{
+                        .flip-card-inner{
+                            width: map-get($width,w-80) !important;
+                            height: 500px !important;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
 /*Mq para main de Inicio*/
 
-@media  screen and (max-width: 1200px) {
+@media  screen and (max-width:600px) {
     .container-fluid{
         .main{
             .titulos{
             }
             .carouselw{
-                width: map-get($width,w-70);
+                width: map-get($width,w-90);
                 .carousel-inner{
                     .carousel-item{
                         .imgcarousel{
@@ -39,13 +58,13 @@
 
 /*Mq para main de Inicio*/
 
-@media  screen and (max-width:600px) {
+@media  screen and (max-width: 1200px) {
     .container-fluid{
         .main{
             .titulos{
             }
             .carouselw{
-                width: map-get($width,w-90);
+                width: map-get($width,w-70);
                 .carousel-inner{
                     .carousel-item{
                         .imgcarousel{
@@ -57,21 +76,3 @@
     }
 }
 
-/*Mq para cards de Galeria*/
-
-@media screen and (max-width: 500px) {
-    .container-fluid{
-        .m-maing{
-            .galeria{
-                .col-xxl-4{
-                    .flip-card{
-                        .flip-card-inner{
-                            width: map-get($width,w-80) !important;
-                            height: 500px !important;
-                        }
-                    }
-                }
-            }
-        }
-    }
-}
