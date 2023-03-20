@@ -7,7 +7,7 @@
                 .col-xxl-4{
                     .flip-card{
                         .flip-card-inner{
-                            width: map-get($width,w-80) !important;
+                            width: 80% !important;
                             height: 500px !important;
                         }
                     }
@@ -25,7 +25,7 @@
             .titulos{
             }
             .carouselw{
-                width: map-get($width,w-90);
+                width: 90%;
                 .carousel-inner{
                     .carousel-item{
                         .imgcarousel{
@@ -46,7 +46,7 @@
                 .col-xxl-4{
                     .flip-card{
                         .flip-card-inner{
-                            width: map-get($width,w-50) !important;
+                            width: 50% !important;
                             height: 550px !important;
                         }
                     }
@@ -64,7 +64,7 @@
             .titulos{
             }
             .carouselw{
-                width: map-get($width,w-70);
+                width: 75%;
                 .carousel-inner{
                     .carousel-item{
                         .imgcarousel{

@@ -1,0 +1,32 @@
+/*Conf. página de error 404*/
+body{
+    .sticky-top{
+        .hf404{
+            height: 14vh;
+        }
+    }
+    .main404{
+        background-image: $color_fondo;
+        height: 72vh;
+        .row{
+            div{
+                .h1404{
+                    font-size: 5rem;
+                    font-weight: bolder;
+                    text-align: center;
+                    padding: 0;
+                    margin: 0;
+                }
+            }
+            .row{
+                .col-12{
+                        .logo404{
+                            width: 200px;
+                            margin: 0 auto;
+                        }
+                }
+            }
+        }
+    }
+}
+
